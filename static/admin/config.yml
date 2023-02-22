@@ -3,8 +3,8 @@ backend:
   repo: damaraa/bisa
   branch: master # Branch to update (optional; defaults to master)
   base_url: https://auth.sengat.workers.dev/
-media_folder: '' # Folder where user uploaded files should go
-public_folder: 'images'
+media_folder: "{{slug}}"
+public_folder: "{{slug}}"
 collections:
   - name: "posts"
     label: "Posts"
@@ -16,15 +16,9 @@ collections:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - label: "Featured Image"
-        name: ""
+        name: "thumbnail"
         widget: "image"
         config:
-          media_library:
-            name: "featured_image"
-            config:
-              multiple: false
-              previewStep: false
-              fileEditor: false
-          filename: "featured"
+          filename_field: "featured"
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
