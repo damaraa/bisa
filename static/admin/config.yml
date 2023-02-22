@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
-  branch: master
+  name: github
+  repo: damaraa/bisa
+  branch: master # Branch to update (optional; defaults to master)
+  base_url: https://bisa.pages.dev
+  auth_endpoint: /api/auth
 media_folder: '' # Folder where user uploaded files should go
 public_folder: ''
 collections:
