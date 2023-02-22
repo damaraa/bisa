@@ -2,8 +2,7 @@ backend:
   name: github
   repo: damaraa/bisa
   branch: master # Branch to update (optional; defaults to master)
-  base_url: https://bisa.pages.dev
-  auth_endpoint: /api/auth
+  base_url: https://auth.sengat.workers.dev/
 media_folder: '' # Folder where user uploaded files should go
 public_folder: ''
 collections:
