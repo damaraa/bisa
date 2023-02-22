@@ -3,8 +3,8 @@ backend:
   repo: damaraa/bisa
   branch: master # Branch to update (optional; defaults to master)
   base_url: https://auth.sengat.workers.dev/
-media_folder: ""
-public_folder: ""
+media_folder: ''
+public_folder: ''
 collections:
   - name: "posts"
     label: "Posts"
@@ -27,7 +27,7 @@ collections:
             multiple: false
             previewStep: false
             fileEditor: false
-          public_folder: "{{year}}-{{month}}-{{day}}-{{slug}}"
+          public_folder: "{{slug}}"
           filename: "featured"
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
