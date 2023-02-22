@@ -25,7 +25,6 @@ collections:
               multiple: false
               previewStep: false
               fileEditor: false
-          public_folder: "/images/{{slug}}/"
           filename: "featured"
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Tags", name: "tags", widget: "list"}
